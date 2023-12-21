@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambiar Texto</title>
+</head>
+<body>
+  <h1>Cambiar Texto</h1>
+
+  <p>Texto actual: <span id="texto">Texto inicial</span></p>
+
+  <button id="botonTexto1">Cambiar a Texto 1</button>
+  <button id="botonTexto2">Cambiar a Texto 2</button>
+
+  <script>
+    // Función para cambiar el texto a "Texto 1"
+    function cambiarTexto1() {
+      const textoSpan = document.getElementById("texto");
+      textoSpan.textContent = "HOLA";
+    }
+
+    // Función para cambiar el texto a "Texto 2"
+    function cambiarTexto2() {
+      const textoSpan = document.getElementById("texto");
+      textoSpan.textContent = "QUE TAL?";
+    }
+
+    // Obtener referencias a los botones
+    const botonTexto1 = document.getElementById("botonTexto1");
+    const botonTexto2 = document.getElementById("botonTexto2");
+
+    // Agregar escuchadores de eventos a los botones
+    botonTexto1.addEventListener("click", cambiarTexto1);
+    botonTexto2.addEventListener("click", cambiarTexto2);
+  </script>
+</body>
+</html>
